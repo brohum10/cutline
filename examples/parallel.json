@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "source": "s",
+  "sink": "t",
+  "demand": 6,
+  "nodes": ["s", "a", "t"],
+  "links": [
+    {"id": "sa-1", "from": "s", "to": "a", "capacity": 5},
+    {"id": "sa-2", "from": "s", "to": "a", "capacity": 7},
+    {"id": "at", "from": "a", "to": "t", "capacity": 15},
+    {"id": "ta", "from": "t", "to": "a", "capacity": 3},
+    {"id": "as", "from": "a", "to": "s", "capacity": 2}
+  ]
+}

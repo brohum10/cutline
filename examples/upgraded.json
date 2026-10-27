@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "source": "ingress",
+  "sink": "exit",
+  "demand": 90,
+  "nodes": ["ingress", "a", "b", "c", "exit"],
+  "links": [
+    {"id": "ingress-a", "from": "ingress", "to": "a", "capacity": 60},
+    {"id": "ingress-b", "from": "ingress", "to": "b", "capacity": 60},
+    {"id": "ingress-c", "from": "ingress", "to": "c", "capacity": 60},
+    {"id": "a-exit", "from": "a", "to": "exit", "capacity": 60},
+    {"id": "b-exit", "from": "b", "to": "exit", "capacity": 60},
+    {"id": "c-exit", "from": "c", "to": "exit", "capacity": 60},
+    {"id": "a-b", "from": "a", "to": "b", "capacity": 40},
+    {"id": "b-a", "from": "b", "to": "a", "capacity": 40}
+  ]
+}

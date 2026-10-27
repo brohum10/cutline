@@ -1,0 +1,747 @@
+{
+  "fragile": {
+    "baseline": {
+      "certificate": {
+        "cut_capacity": 120,
+        "cut_links": [
+          "ingress-a",
+          "ingress-b"
+        ],
+        "failed_link": null,
+        "flow_by_link": {
+          "a-b": 0,
+          "a-exit": 60,
+          "b-a": 0,
+          "b-exit": 60,
+          "ingress-a": 60,
+          "ingress-b": 60
+        },
+        "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+        "source_side": [
+          "ingress"
+        ],
+        "value": 120,
+        "version": 1
+      },
+      "max_flow": 120,
+      "meets_demand": true,
+      "shortfall": 0
+    },
+    "demand": 90,
+    "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+    "single_link_failures": [
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b"
+          ],
+          "failed_link": "a-b",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 60
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "a-b",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 60,
+          "cut_links": [
+            "a-exit",
+            "b-exit"
+          ],
+          "failed_link": "a-exit",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 0,
+            "b-a": 0,
+            "b-exit": 60,
+            "ingress-a": 0,
+            "ingress-b": 60
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "a",
+            "b",
+            "ingress"
+          ],
+          "value": 60,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "a-exit",
+        "max_flow": 60,
+        "meets_demand": false,
+        "shortfall": 30
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b"
+          ],
+          "failed_link": "b-a",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 60
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "b-a",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 60,
+          "cut_links": [
+            "a-exit",
+            "b-exit"
+          ],
+          "failed_link": "b-exit",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 0,
+            "ingress-a": 60,
+            "ingress-b": 0
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "a",
+            "b",
+            "ingress"
+          ],
+          "value": 60,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "b-exit",
+        "max_flow": 60,
+        "meets_demand": false,
+        "shortfall": 30
+      },
+      {
+        "certificate": {
+          "cut_capacity": 60,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b"
+          ],
+          "failed_link": "ingress-a",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 0,
+            "b-a": 0,
+            "b-exit": 60,
+            "ingress-a": 0,
+            "ingress-b": 60
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 60,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "ingress-a",
+        "max_flow": 60,
+        "meets_demand": false,
+        "shortfall": 30
+      },
+      {
+        "certificate": {
+          "cut_capacity": 60,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b"
+          ],
+          "failed_link": "ingress-b",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 0,
+            "ingress-a": 60,
+            "ingress-b": 0
+          },
+          "network_sha256": "82bac530d035e3694c35375a7e103561a440b6a29d9d78c8fb7977ec2ebc31f5",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 60,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "ingress-b",
+        "max_flow": 60,
+        "meets_demand": false,
+        "shortfall": 30
+      }
+    ],
+    "summary": {
+      "all_scenarios_meet_demand": false,
+      "capacity_reducing_links": [
+        "a-exit",
+        "b-exit",
+        "ingress-a",
+        "ingress-b"
+      ],
+      "demand_violating_links": [
+        "a-exit",
+        "b-exit",
+        "ingress-a",
+        "ingress-b"
+      ],
+      "scenarios_checked": 7,
+      "worst_failed_links": [
+        "a-exit",
+        "b-exit",
+        "ingress-a",
+        "ingress-b"
+      ],
+      "worst_max_flow": 60
+    },
+    "version": 1
+  },
+  "parallel": {
+    "baseline": {
+      "certificate": {
+        "cut_capacity": 12,
+        "cut_links": [
+          "sa-1",
+          "sa-2"
+        ],
+        "failed_link": null,
+        "flow_by_link": {
+          "as": 0,
+          "at": 12,
+          "sa-1": 5,
+          "sa-2": 7,
+          "ta": 0
+        },
+        "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+        "source_side": [
+          "s"
+        ],
+        "value": 12,
+        "version": 1
+      },
+      "max_flow": 12,
+      "meets_demand": true,
+      "shortfall": 0
+    },
+    "demand": 6,
+    "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+    "single_link_failures": [
+      {
+        "certificate": {
+          "cut_capacity": 12,
+          "cut_links": [
+            "sa-1",
+            "sa-2"
+          ],
+          "failed_link": "as",
+          "flow_by_link": {
+            "as": 0,
+            "at": 12,
+            "sa-1": 5,
+            "sa-2": 7,
+            "ta": 0
+          },
+          "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+          "source_side": [
+            "s"
+          ],
+          "value": 12,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "as",
+        "max_flow": 12,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 0,
+          "cut_links": [
+            "at"
+          ],
+          "failed_link": "at",
+          "flow_by_link": {
+            "as": 0,
+            "at": 0,
+            "sa-1": 0,
+            "sa-2": 0,
+            "ta": 0
+          },
+          "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+          "source_side": [
+            "a",
+            "s"
+          ],
+          "value": 0,
+          "version": 1
+        },
+        "drop_from_baseline": 12,
+        "failed_link": "at",
+        "max_flow": 0,
+        "meets_demand": false,
+        "shortfall": 6
+      },
+      {
+        "certificate": {
+          "cut_capacity": 7,
+          "cut_links": [
+            "sa-1",
+            "sa-2"
+          ],
+          "failed_link": "sa-1",
+          "flow_by_link": {
+            "as": 0,
+            "at": 7,
+            "sa-1": 0,
+            "sa-2": 7,
+            "ta": 0
+          },
+          "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+          "source_side": [
+            "s"
+          ],
+          "value": 7,
+          "version": 1
+        },
+        "drop_from_baseline": 5,
+        "failed_link": "sa-1",
+        "max_flow": 7,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 5,
+          "cut_links": [
+            "sa-1",
+            "sa-2"
+          ],
+          "failed_link": "sa-2",
+          "flow_by_link": {
+            "as": 0,
+            "at": 5,
+            "sa-1": 5,
+            "sa-2": 0,
+            "ta": 0
+          },
+          "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+          "source_side": [
+            "s"
+          ],
+          "value": 5,
+          "version": 1
+        },
+        "drop_from_baseline": 7,
+        "failed_link": "sa-2",
+        "max_flow": 5,
+        "meets_demand": false,
+        "shortfall": 1
+      },
+      {
+        "certificate": {
+          "cut_capacity": 12,
+          "cut_links": [
+            "sa-1",
+            "sa-2"
+          ],
+          "failed_link": "ta",
+          "flow_by_link": {
+            "as": 0,
+            "at": 12,
+            "sa-1": 5,
+            "sa-2": 7,
+            "ta": 0
+          },
+          "network_sha256": "a17c3150299fdcf66647c23d7b89c7677e41bdc8f92813493ad0881c99e21e71",
+          "source_side": [
+            "s"
+          ],
+          "value": 12,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "ta",
+        "max_flow": 12,
+        "meets_demand": true,
+        "shortfall": 0
+      }
+    ],
+    "summary": {
+      "all_scenarios_meet_demand": false,
+      "capacity_reducing_links": [
+        "at",
+        "sa-1",
+        "sa-2"
+      ],
+      "demand_violating_links": [
+        "at",
+        "sa-2"
+      ],
+      "scenarios_checked": 6,
+      "worst_failed_links": [
+        "at"
+      ],
+      "worst_max_flow": 0
+    },
+    "version": 1
+  },
+  "upgraded": {
+    "baseline": {
+      "certificate": {
+        "cut_capacity": 180,
+        "cut_links": [
+          "ingress-a",
+          "ingress-b",
+          "ingress-c"
+        ],
+        "failed_link": null,
+        "flow_by_link": {
+          "a-b": 0,
+          "a-exit": 60,
+          "b-a": 0,
+          "b-exit": 60,
+          "c-exit": 60,
+          "ingress-a": 60,
+          "ingress-b": 60,
+          "ingress-c": 60
+        },
+        "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+        "source_side": [
+          "ingress"
+        ],
+        "value": 180,
+        "version": 1
+      },
+      "max_flow": 180,
+      "meets_demand": true,
+      "shortfall": 0
+    },
+    "demand": 90,
+    "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+    "single_link_failures": [
+      {
+        "certificate": {
+          "cut_capacity": 180,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b",
+            "ingress-c"
+          ],
+          "failed_link": "a-b",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 60,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 180,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "a-b",
+        "max_flow": 180,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "a-exit",
+            "b-exit",
+            "ingress-c"
+          ],
+          "failed_link": "a-exit",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 0,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 60,
+            "ingress-a": 0,
+            "ingress-b": 60,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "a",
+            "b",
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "a-exit",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 180,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b",
+            "ingress-c"
+          ],
+          "failed_link": "b-a",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 60,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 180,
+          "version": 1
+        },
+        "drop_from_baseline": 0,
+        "failed_link": "b-a",
+        "max_flow": 180,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "a-exit",
+            "b-exit",
+            "ingress-c"
+          ],
+          "failed_link": "b-exit",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 0,
+            "c-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 0,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "a",
+            "b",
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "b-exit",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "c-exit",
+            "ingress-a",
+            "ingress-b"
+          ],
+          "failed_link": "c-exit",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 0,
+            "ingress-a": 60,
+            "ingress-b": 60,
+            "ingress-c": 0
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "c",
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "c-exit",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b",
+            "ingress-c"
+          ],
+          "failed_link": "ingress-a",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 0,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 60,
+            "ingress-a": 0,
+            "ingress-b": 60,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "ingress-a",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b",
+            "ingress-c"
+          ],
+          "failed_link": "ingress-b",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 0,
+            "c-exit": 60,
+            "ingress-a": 60,
+            "ingress-b": 0,
+            "ingress-c": 60
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "ingress-b",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      },
+      {
+        "certificate": {
+          "cut_capacity": 120,
+          "cut_links": [
+            "ingress-a",
+            "ingress-b",
+            "ingress-c"
+          ],
+          "failed_link": "ingress-c",
+          "flow_by_link": {
+            "a-b": 0,
+            "a-exit": 60,
+            "b-a": 0,
+            "b-exit": 60,
+            "c-exit": 0,
+            "ingress-a": 60,
+            "ingress-b": 60,
+            "ingress-c": 0
+          },
+          "network_sha256": "fcfda8e5e36c13896286ff659f102794c1d7ffc39f1cbe283b19644b7263b311",
+          "source_side": [
+            "ingress"
+          ],
+          "value": 120,
+          "version": 1
+        },
+        "drop_from_baseline": 60,
+        "failed_link": "ingress-c",
+        "max_flow": 120,
+        "meets_demand": true,
+        "shortfall": 0
+      }
+    ],
+    "summary": {
+      "all_scenarios_meet_demand": true,
+      "capacity_reducing_links": [
+        "a-exit",
+        "b-exit",
+        "c-exit",
+        "ingress-a",
+        "ingress-b",
+        "ingress-c"
+      ],
+      "demand_violating_links": [],
+      "scenarios_checked": 9,
+      "worst_failed_links": [
+        "a-exit",
+        "b-exit",
+        "c-exit",
+        "ingress-a",
+        "ingress-b",
+        "ingress-c"
+      ],
+      "worst_max_flow": 120
+    },
+    "version": 1
+  }
+}

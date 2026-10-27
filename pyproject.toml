@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cutline"
+version = "0.1.0"
+description = "Single-link failure capacity audits with independently verifiable maximum-flow/minimum-cut certificates"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Soham Jindal"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/brohum10/cutline"
+Issues = "https://github.com/brohum10/cutline/issues"
+
+[project.scripts]
+cutline = "cutline.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["cutline*"]
+
+[tool.black]
+line-length = 100
